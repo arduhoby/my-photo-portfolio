@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Fotoğraf Portföyüm</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Fotoğraf Portföyüm</h1>
+    <button id="uploadBtn">Yeni Yükle</button>
+  </header>
+
+  <form id="uploadForm" style="display:none">
+    <input type="file" id="fileInput" accept="image/*">
+    <input type="text" id="tags" placeholder="Etiketler (virgülle)">
+    <input type="date" id="shotDate">
+    <button type="submit">Kaydet</button>
+  </form>
+
+  <section id="gallery"></section>
+
+  <script src="app.js"></script>
+</body>
+</html>
